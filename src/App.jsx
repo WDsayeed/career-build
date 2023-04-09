@@ -5,9 +5,8 @@ import Home from "./Component/Home/Home";
 
 function App() {
   return (
-    <div className="">
+    <div className=" bg-indigo-50">
       <Header></Header>
-      <Home></Home>
       <Outlet></Outlet>
     </div>
   );
