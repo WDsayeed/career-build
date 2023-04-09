@@ -31,7 +31,7 @@ const Header = () => {
           Blog
         </NavLink>
       </div>
-      <button className="btn bg-gradient-to-r from-indigo-400 to-violet-500 px-4 py-3 rounded-lg text-white">
+      <button className="btn bg-gradient-to-r from-indigo-400 to-violet-500 px-4 py-3 rounded-lg text-white font-medium">
         Start Applying
       </button>
     </nav>
