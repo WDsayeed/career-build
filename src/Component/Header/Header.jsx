@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <nav className="flex justify-between items-center  my-container">
-      <h1 className="text-3xl font-semibold">CareerBuild</h1>
+      <h1 className="text-3xl font-semibold"> <span className="text-indigo-500">Career</span>Build</h1>
       <div className="flex gap-10 text-gray-500">
         <NavLink
           to="/"

@@ -1,5 +1,6 @@
 import React from "react";
 import JobCategory from "../JobCategory/JobCategory";
+import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
 
 const Home = () => {
   return (
@@ -26,6 +27,7 @@ const Home = () => {
         </div>
         {/* job category */}
         <JobCategory></JobCategory>
+        <FeaturedJobs></FeaturedJobs>
       </div>
     
   );
