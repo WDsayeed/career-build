@@ -5,7 +5,6 @@ import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
   const jobFeatures = useLoaderData();
-  // console.log(jobFeatures)
   return (
     <div className="my-container">
       <div className="flex items-center gap-15 ">

@@ -5,13 +5,13 @@ const ViewDeatails = () => {
   const loaderData = useLoaderData();
   const detailsId = useParams();
 
-  const filterData = loaderData.find(
+  const filterData = loaderData?.find(
         (data) => data.id == detailsId.detailsId
-      );
+      ) || {}
 
   return (
-    <div>
-        <h1 className="">Job Details</h1>
+    <div className="mt-20">
+        <h1 className="text-4xl font-semibold text-center">Job Details</h1>
      <Details filterData={filterData}></Details>
     </div>
   );
