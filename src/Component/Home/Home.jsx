@@ -1,8 +1,11 @@
 import React from "react";
 import JobCategory from "../JobCategory/JobCategory";
 import FeaturedJobs from "../FeaturedJobs/FeaturedJobs";
+import { useLoaderData } from "react-router-dom";
 
 const Home = () => {
+  const jobFeatures = useLoaderData()
+  console.log(jobFeatures)
   return (
     
       <div className="my-container">
@@ -27,7 +30,7 @@ const Home = () => {
         </div>
         {/* job category */}
         <JobCategory></JobCategory>
-        <FeaturedJobs></FeaturedJobs>
+        <FeaturedJobs jobFeatures={jobFeatures}></FeaturedJobs>
       </div>
     
   );
