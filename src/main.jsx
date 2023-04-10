@@ -11,6 +11,7 @@ import Home from './Component/Home/Home';
 import Statistics from './Component/Statistics/Statistics';
 import AppliedJobs from './Component/AppliedJobs/AppliedJobs';
 import Blog from './Component/Blog/Blog';
+import ViewDeatails from './Component/ViewDetails/ViewDeatails';
 
 const router = createBrowserRouter([
   {
@@ -21,6 +22,11 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home></Home>,
+        loader:()=> fetch('Featured.json')
+      },
+      {
+        path:'details/:detailsId',
+        element: <ViewDeatails></ViewDeatails>,
         loader:()=> fetch('Featured.json')
       },
       {
