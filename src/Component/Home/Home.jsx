@@ -7,7 +7,7 @@ const Home = () => {
   const jobFeatures = useLoaderData();
   return (
     <div className="my-container">
-      <div className="flex items-center gap-15 ">
+      <div className="md:flex items-center gap-15 ">
         <div>
           <h1 className="text-6xl leading-[75px] font-semibold">
             One Step <br /> Closer To Your <br />{" "}
