@@ -4,7 +4,7 @@ import { faLocationDot, faDollarSign, faPhone,
 faEnvelope , faBriefcase} from "@fortawesome/free-solid-svg-icons";
 import { addToDb } from "../../utils/fakeDb";
 
-const Details = ({ filterData }) => {
+const Details = ({ findData }) => {
   const {
     id,
     jobTitle,
@@ -16,7 +16,7 @@ const Details = ({ filterData }) => {
     phone,
     email,
     address
-  } = filterData;
+  } = findData;
 
   const handleApplyBtn = id =>{
     addToDb(id)

@@ -17,7 +17,7 @@ const SingleFeature = ({ feature }) => {
   } = feature;
   return (
     <div className="border-2 border-gray-100 p-8">
-      <img className="w-32 h-10 mb-3" src={companyLogo} alt="" />
+      <img className="w-32 h-10 mb-6" src={companyLogo} alt="" />
       <p className="text-xl font-medium text-gray-700">{jobTitle}</p>
       <p className="text-gray-600">{companyName}</p>
       <div className="flex gap-3 my-3">
@@ -37,7 +37,7 @@ const SingleFeature = ({ feature }) => {
         </p>
       </div>
      <Link to={`/details/${id}`}>
-     <button className="btn bg-gradient-to-r from-indigo-400 to-violet-500 px-2 py-2 text-white rounded-md font-medium mt-2">
+     <button className="btn bg-gradient-to-r from-indigo-400 to-violet-500 px-2 py-2 text-white rounded-md font-medium mt-4">
         View Details
       </button>
      </Link>
