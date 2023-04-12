@@ -17,7 +17,7 @@ const SingleFeature = ({ feature }) => {
   } = feature;
   return (
     <div className="border-2 mb-5 border-gray-100 p-8">
-      <img className="w-32 h-10 mb-6" src={companyLogo} alt="" />
+      <img className="w-32 h-16 mb-6" src={companyLogo} alt="" />
       <p className="text-xl font-medium text-gray-700">{jobTitle}</p>
       <p className="text-gray-600">{companyName}</p>
       <div className="flex gap-3 my-3">

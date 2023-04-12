@@ -18,7 +18,7 @@ const AppliedJob = ({ data }) => {
     <div className="flex w-[60%] justify-between p-7 border-2 items-center">
       <div>
         
-          <img src={companyLogo} alt="" />
+          <img className="w-2/4" src={companyLogo} alt="" />
         
         <div>
         <p className="text-xl font-medium text-gray-700">{jobTitle}</p>

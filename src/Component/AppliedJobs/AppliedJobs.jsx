@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import AppliedJob from "../AppliedJob/AppliedJob";
-import Filrer from "../Filter/Filrer";
 
 const AppliedJobs = () => {
   const allData = useLoaderData();
@@ -19,7 +18,7 @@ const AppliedJobs = () => {
     <div className="my-20">
       <h1 className="text-center text-4xl font-semibold">Applied Jobs</h1>
       <div className="flex gap-6 my-container mb-20 justify-end">
-        <select onChange={() => handleFilter(event)}>
+        <select className="px-3 bg-indigo-100 rounded border-indigo-700" onChange={() => handleFilter(event)}>
           <option value="default">Filter by</option>
           <option value="Remote">Remote</option>
           <option value="Onsite">Onsite</option>
