@@ -20,7 +20,7 @@ const AppliedJobs = () => {
       <h1 className="text-center text-4xl font-semibold">Applied Jobs</h1>
       <div className="flex gap-6 my-container mb-20 justify-end">
         <select onChange={() => handleFilter(event)}>
-          <option value="">Filter by</option>
+          <option value="default">Filter by</option>
           <option value="Remote">Remote</option>
           <option value="Onsite">Onsite</option>
         </select>
